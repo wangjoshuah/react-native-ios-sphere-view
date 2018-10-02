@@ -10,6 +10,9 @@
 		11EF335E2163D4A90086D94B /* JHWSphereView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EF33542163D4A90086D94B /* JHWSphereView.framework */; };
 		11EF33632163D4A90086D94B /* JHWSphereViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EF33622163D4A90086D94B /* JHWSphereViewTests.m */; };
 		11EF33652163D4A90086D94B /* JHWSphereView.h in Headers */ = {isa = PBXBuildFile; fileRef = 11EF33572163D4A90086D94B /* JHWSphereView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11EF33702163D9920086D94B /* JHWSphereViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11EF336E2163D9920086D94B /* JHWSphereViewManager.h */; };
+		11EF33712163D9920086D94B /* JHWSphereViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EF336F2163D9920086D94B /* JHWSphereViewManager.m */; };
+		35192B3AEA47F3ED083052D0 /* Pods_JHWSphereView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3054D86A31C382527D4B7501 /* Pods_JHWSphereView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,11 @@
 		11EF335D2163D4A90086D94B /* JHWSphereViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHWSphereViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11EF33622163D4A90086D94B /* JHWSphereViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHWSphereViewTests.m; sourceTree = "<group>"; };
 		11EF33642163D4A90086D94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11EF336E2163D9920086D94B /* JHWSphereViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHWSphereViewManager.h; sourceTree = "<group>"; };
+		11EF336F2163D9920086D94B /* JHWSphereViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHWSphereViewManager.m; sourceTree = "<group>"; };
+		3054D86A31C382527D4B7501 /* Pods_JHWSphereView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHWSphereView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3C9384A67074D408782889 /* Pods-JHWSphereView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHWSphereView.release.xcconfig"; path = "Pods/Target Support Files/Pods-JHWSphereView/Pods-JHWSphereView.release.xcconfig"; sourceTree = "<group>"; };
+		C4EECF058191041ABF3E4CAA /* Pods-JHWSphereView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHWSphereView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JHWSphereView/Pods-JHWSphereView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35192B3AEA47F3ED083052D0 /* Pods_JHWSphereView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,8 @@
 				11EF33562163D4A90086D94B /* JHWSphereView */,
 				11EF33612163D4A90086D94B /* JHWSphereViewTests */,
 				11EF33552163D4A90086D94B /* Products */,
+				8DDF53752FB7C476F0D47E17 /* Pods */,
+				1DFAACAA902C8646DAFB3E3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				11EF33572163D4A90086D94B /* JHWSphereView.h */,
+				11EF336E2163D9920086D94B /* JHWSphereViewManager.h */,
+				11EF336F2163D9920086D94B /* JHWSphereViewManager.m */,
 				11EF33582163D4A90086D94B /* Info.plist */,
 			);
 			path = JHWSphereView;
@@ -86,6 +99,23 @@
 			path = JHWSphereViewTests;
 			sourceTree = "<group>";
 		};
+		1DFAACAA902C8646DAFB3E3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3054D86A31C382527D4B7501 /* Pods_JHWSphereView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DDF53752FB7C476F0D47E17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4EECF058191041ABF3E4CAA /* Pods-JHWSphereView.debug.xcconfig */,
+				9F3C9384A67074D408782889 /* Pods-JHWSphereView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +123,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EF33702163D9920086D94B /* JHWSphereViewManager.h in Headers */,
 				11EF33652163D4A90086D94B /* JHWSphereView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11EF33682163D4A90086D94B /* Build configuration list for PBXNativeTarget "JHWSphereView" */;
 			buildPhases = (
+				47C05165DF0A65850C5461DB /* [CP] Check Pods Manifest.lock */,
 				11EF334F2163D4A90086D94B /* Headers */,
 				11EF33502163D4A90086D94B /* Sources */,
 				11EF33512163D4A90086D94B /* Frameworks */,
@@ -188,11 +220,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47C05165DF0A65850C5461DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JHWSphereView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11EF33502163D4A90086D94B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EF33712163D9920086D94B /* JHWSphereViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +389,7 @@
 		};
 		11EF33692163D4A90086D94B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4EECF058191041ABF3E4CAA /* Pods-JHWSphereView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -358,6 +413,7 @@
 		};
 		11EF336A2163D4A90086D94B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F3C9384A67074D408782889 /* Pods-JHWSphereView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
